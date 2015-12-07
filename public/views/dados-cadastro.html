@@ -1,0 +1,41 @@
+<div class="container">
+  <h2>Contatos</h2>
+  <button ng-click="buscar()" type="button" class="btn btn-primary pull-right btn-sm">Buscar</button>
+  
+  <a href="#/cadastro-contato"> 
+      <button type="button" class="btn btn-default pull-right btn-sm">Novo</button>
+  </a>
+
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Telefone</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+
+
+
+    <tr ng-repeat="contato in contatos"> 
+      <td>{{contato.nome}}</td>
+      <td>{{contato.email}}</td>
+      <td>{{contato.telefone}}</td>
+      <td>
+              <a href="#/cadastro-contato/{{contato._id.$oid}}">
+                <button  href="#/cadastro-contato/{{contato._id.$oid}}" type="button" class="btn btn-primary">
+                    Editar
+                </button>
+              </a>
+
+              <button  ng-click="excluirContato(contato)" type="button" class="btn btn-danger">Excluir</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
