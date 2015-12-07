@@ -1,0 +1,24 @@
+{
+  "name": "angular-exemplo-cadastro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wendemendes/angular-exemplo-cadastro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wendemendes/angular-exemplo-cadastro/issues"
+  },
+  "homepage": "https://github.com/wendemendes/angular-exemplo-cadastro"
+}
